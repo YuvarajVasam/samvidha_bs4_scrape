@@ -3,6 +3,16 @@ import re
  
 
 def get_attendence_indexes():
+
+    """
+    Extracts the indices of specific headers from the attendance HTML table.
+    Raises a KeyError if any specified header is not found.
+
+    Returns:
+        tuple: A tuple containing the indices of 'Course Name', 'Conducted',
+               'Attended', 'Attendance %', 'Status'.
+    """
+
     with open('attendence.html','r') as html_data:
 
         soup = BeautifulSoup(html_data, 'html.parser')
@@ -18,16 +28,34 @@ def get_attendence_indexes():
     
     keys = ['Course Name','Conducted','Attended','Attendance %','Status']
 
-    index_list = [indexes_dict.get(key) for key in keys] 
+    # index_list = [indexes_dict.get(key) for key in keys] 
+
+    # Gets the indexes of specified keys, raise KeyError if any key not found 
+    index_list = []
+    for key in keys:
+        if key not in indexes_dict:
+            raise KeyError(f"Header {key} not found in the table.")
+        
+        index_list.append(indexes_dict.get(key))
+        
+
     index_tuple = tuple(index_list)
 
     return index_tuple
 
 
-print(get_attendence_indexes())
-
 
 def get_pat_indexes():
+
+    """
+    Extracts the indices of specific headers from the PAT HTML table.
+    Raises a KeyError if any specified header is not found.
+
+    Returns:
+        tuple: A tuple containing the indices of 'Course Name', 'Conducted',
+               'Attended', 'Attendance %', 'Status'.
+    """
+
 
     with open('pat.html','r') as html_data:
         soup = BeautifulSoup(html_data, 'html.parser')
@@ -44,16 +72,32 @@ def get_pat_indexes():
 
     keys = ['Course Name','Conducted','Attended','Attendance %','Status']
 
-    index_list = [indexes_dict.get(key) for key in keys] 
+    # index_list = [indexes_dict.get(key) for key in keys] 
+
+    # Gets the indexes of specified keys, raise KeyError if any key not found 
+    index_list = []
+    for key in keys:
+        if key not in indexes_dict:
+            raise KeyError(f"Header {key} not found in the table.")
+        
+        index_list.append(indexes_dict.get(key))
+
     index_tuple = tuple(index_list)
 
     return index_tuple
 
 
-print(get_pat_indexes())
-
 
 def get_biometric_indexes():
+
+    """
+    Extracts the indices of specific headers from the biometric HTML table.
+    Excludes the 'JNTUH - AEBAS' header.
+    Raises a KeyError if any specified header is not found.
+
+    Returns:
+        tuple: A tuple containing the indices of 'In Time', 'Out Time', 'Status'.
+    """
 
     with open('biometric.html','r') as html_data:
     # Parse HTML data
@@ -70,12 +114,43 @@ def get_biometric_indexes():
 
     keys = ['In Time','Out Time','Status']
 
-    index_list = [indexes_dict.get(key) for key in keys] 
+    # index_list = [indexes_dict.get(key) for key in keys] 
+
+    # Gets the indexes of specified keys, raise KeyError if any key not found 
+    index_list = []
+    for key in keys:
+        if key not in indexes_dict:
+            raise KeyError(f"Header {key} not found in the table.")
+        
+        index_list.append(indexes_dict.get(key))
+
     index_tuple = tuple(index_list)
 
     return index_tuple
 
 
-print(get_biometric_indexes())
 
 
+# Call the functions and print the results, handling KeyErrors\
+
+
+try:
+    print(get_attendence_indexes())
+
+except KeyError as e:
+    print(e)
+
+
+
+try:
+    print(get_pat_indexes())
+
+except KeyError as e:
+    print(e)
+
+
+try:
+    print(get_biometric_indexes())
+
+except KeyError as e:
+    print(e)
