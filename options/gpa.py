@@ -1240,7 +1240,12 @@ pattern = r'Semester Grade Point Average \(SGPA\) : (\d(?:\.\d\d)?)'
 
 sgpa_values = re.findall(pattern,text)
 sgpa_values = [float(x) for x in sgpa_values]
-cgpa = round(sum(sgpa_values) / len(sgpa_values) , 2)
+
+cgpa = sum(sgpa_values) / len(sgpa_values)
+cgpa_roundoff = round(sum(sgpa_values) / len(sgpa_values) , 2) # Roundoff to 2 digits
+
+cgpa_string = str(cgpa) # Converted from float to string to make accurate gpa without roundoff
+cgpa_string_message = cgpa_string[:4] # GPA upto 2 decimals 
 
 gpa_message = """
 ```GPA
@@ -1255,7 +1260,7 @@ for i,sgpa in enumerate(sgpa_values,start = 1):
     
 
 
-gpa_message += f"""⫸ CGPA : {cgpa}  
+gpa_message += f"""⫸ CGPA : {cgpa_string_message}  
 ```
 """
 
