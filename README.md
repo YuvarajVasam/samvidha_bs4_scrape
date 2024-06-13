@@ -13,6 +13,7 @@ The repo includes scraping files for:
 - Profile
 - PAT Attendance
 - GPA
+- CIE Marks
 - Lab Upload
 - And many more...
 
