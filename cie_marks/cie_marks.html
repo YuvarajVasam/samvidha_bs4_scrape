@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>IARE - Continuous Internal Assessment (CIA) Marks - Student</title>
+	<!-- Favicons -->
+	<link href="https://samvidha.iare.ac.in/images/favicon.ico" rel="icon">
+	<!-- Tell the browser to be responsive to screen width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://samvidha.iare.ac.in/plugins/fontawesome-free/css/all.min.css">
+	<!-- Ionicons -->
+	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<!-- Tempusdominus Bbootstrap 4 -->
+	<link rel="stylesheet" href="https://samvidha.iare.ac.in/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+	<!-- iCheck -->
+	<link rel="stylesheet" href="https://samvidha.iare.ac.in/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+	<!-- JQVMap -->
+	<link rel="stylesheet" href="https://samvidha.iare.ac.in/plugins/jqvmap/jqvmap.min.css">
+	<!-- Theme style -->
+	<link rel="stylesheet" href="https://samvidha.iare.ac.in/dist/css/adminlte.min.css" >
+	<!-- overlayScrollbars -->
+	<link rel="stylesheet" href="https://samvidha.iare.ac.in/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+	<!-- Daterange picker -->
+	<link rel="stylesheet" href="https://samvidha.iare.ac.in/plugins/daterangepicker/daterangepicker.css">
+	<!-- summernote -->
+	<link rel="stylesheet" href="https://samvidha.iare.ac.in/plugins/summernote/summernote-bs4.css">
+	<!-- Google Font: Source Sans Pro -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+	<!-- my Custome style -->
+	<link rel="stylesheet" href="https://samvidha.iare.ac.in/dist/css/custome.css">
+	
+	<!-- jQuery -->
+	<script src="https://samvidha.iare.ac.in/plugins/jquery/jquery.min.js"></script>
+	<!-- jQuery UI 1.11.4 -->
+	<script src="https://samvidha.iare.ac.in/plugins/jquery-ui/jquery-ui.min.js"></script>
+	<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+	<!-- Bootstrap 4 -->
+	<script src="https://samvidha.iare.ac.in/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- SweetAlert2 -->
+	<link rel="stylesheet" href="https://samvidha.iare.ac.in/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+	<script src="https://samvidha.iare.ac.in/plugins/sweetalert2/sweetalert2.min.js"></script>
+	
+	
+</head>
+<body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">
+
+<div class="wrapper"> 
+<!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="https://samvidha.iare.ac.in/home" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+	  <li class="nav-item d-none d-sm-inline-block">
+        <a href="https://samvidha.iare.ac.in/logout" class="nav-link text-danger">Sign out</a>
+      </li>
+	  
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">0</span>
+        </a>
+        <!--<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>-->
+      </li>
+	  <li class="nav-item dropdown user user-menu open">
+		 <a class="nav-link" data-toggle="dropdown" href="#">
+						<img src="https://iare-data.s3.ap-south-1.amazonaws.com/uploads/STUDENTS/22951A66J6/22951A66J6.jpg" class="user-image" title="VASAM YUVARAJ">
+			<span class="hidden-xs">VASAM YUVARAJ</span>
+		</a>
+		<ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+		  <!-- User image -->
+		  <li class="user-header">
+			<img src="https://iare-data.s3.ap-south-1.amazonaws.com/uploads/STUDENTS/22951A66J6/22951A66J6.jpg" class="img-circle" alt="VASAM YUVARAJ" title="VASAM YUVARAJ">
+			<p>VASAM YUVARAJ</p>
+			<small>
+			22951A66J6<br/>B.Tech IV Semester - C Section<br/>Computer Science and Engineering (AI&ML)			</small>
+		  </li>
+		  <!-- Menu Footer-->
+		  <li class="user-footer">
+						<div class="float-left">
+			  <a href="https://samvidha.iare.ac.in/home?action=profile" class="btn btn-primary">Profile</a>
+			</div>
+						<div class="float-right">
+			  <a href="https://samvidha.iare.ac.in/logout" class="btn btn-danger">Sign out</a>
+			</div>
+		  </li>
+		</ul>
+	  </li>
+	  
+    
+    </ul>
+  </nav>
+  <!-- /.navbar --><!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="https://samvidha.iare.ac.in/home" class="brand-link" title="Institute of Aeronautical Engineering">
+		<img src="https://samvidha.iare.ac.in/images//logo.jpg" alt="Institute of Aeronautical Engineering" title="Institute of Aeronautical Engineering" class="brand-image img-circle elevation-3">
+		<span class="brand-text font-weight-light">IARE</span>
+    </a>
+	<!-- Sidebar -->
+    <div class="sidebar">
+		<!-- Sidebar Menu -->
+		<nav class="mt-2">
+			<input type="text" id="myInput" placeholder="Search for menu.." title="Type in a menu name">
+			<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+				<!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
+				<li class="nav-item">
+					<a href="https://samvidha.iare.ac.in/home" class="nav-link " title="Dashboard">
+						<i class="nav-icon fas fa-tachometer-alt"></i>
+						<p> Dashboard </p>
+					</a>
+				</li>
+										<li class="nav-item has-treeview">
+								<a href="#" class="nav-link" title="Examinations">
+								  <i class="nav-icon fas fa-graduation-cap"></i>
+								  <p>Examinations <i class="fas fa-angle-left right"></i></p>
+								</a>
+								<ul class="nav nav-treeview">
+																			<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=cie_marks_ug" class="nav-link" title="Continuous Internal Assessment (CIA) Marks">
+												  <i class="nav-icon fas far fa-star"></i>
+												  <p> CIA Marks </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=admit_card_std" class="nav-link" title="Admit Card">
+												  <i class="nav-icon fas fa-print"></i>
+												  <p> Admit Card </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=exam_registration" class="nav-link" title="Exam Registration">
+												  <i class="nav-icon fas fa-graduation-cap"></i>
+												  <p> Exam Registration </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=makeupexam_registration" class="nav-link" title="Makeup Exam Registration">
+												  <i class="nav-icon fas fa-graduation-cap"></i>
+												  <p> Makeup Exam Registration </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=exam_results" class="nav-link" title="Exam Result">
+												  <i class="nav-icon fas fa-graduation-cap"></i>
+												  <p> Exam Result </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=credit_register" class="nav-link" title="Credit Register">
+												  <i class="nav-icon fas "></i>
+												  <p> Credit Register </p>
+												</a>
+											</li>
+																				<li class="nav-item has-treeview">
+												<a href="#" class="nav-link" title="Booklets">
+												  <i class="nav-icon fas fa-graduation-cap"></i>
+												  <p>Booklets <i class="fas fa-angle-left right"></i></p>
+												</a>
+												<ul class="nav nav-treeview">
+																												<li class="nav-item">
+																<a href="https://samvidha.iare.ac.in/home?action=see_booklet" class="nav-link" title="SEE Booklets">
+																  <i class="nav-icon fas "></i>
+																  <p> SEE Booklets </p>
+																</a>
+															</li>
+																												<li class="nav-item">
+																<a href="https://samvidha.iare.ac.in/home?action=cie_booklet" class="nav-link" title="CIE Booklets">
+																  <i class="nav-icon fas "></i>
+																  <p> CIE Booklets </p>
+																</a>
+															</li>
+																									</ul>
+											</li>
+																					<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=qp_scheme" class="nav-link" title="Question Paper and Solution">
+												  <i class="nav-icon fas fa-question"></i>
+												  <p> Question Paper and Solution </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=revaluation" class="nav-link" title="Revaluation">
+												  <i class="nav-icon fas fa-recycle"></i>
+												  <p> Revaluation </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=rem_registration" class="nav-link" title="Remedial Exam Registration">
+												  <i class="nav-icon fas fa-graduation-cap"></i>
+												  <p> Remedial Exam Registration </p>
+												</a>
+											</li>
+																	</ul>
+							</li>
+														<li class="nav-item has-treeview">
+								<a href="#" class="nav-link" title="Academics">
+								  <i class="nav-icon fas fa-university"></i>
+								  <p>Academics <i class="fas fa-angle-left right"></i></p>
+								</a>
+								<ul class="nav nav-treeview">
+																			<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=course_content" class="nav-link" title="Course Content Delivery">
+												  <i class="nav-icon fas fa-heart"></i>
+												  <p> Course Content Delivery </p>
+												</a>
+											</li>
+																				<li class="nav-item has-treeview">
+												<a href="#" class="nav-link" title="Course Registration">
+												  <i class="nav-icon fas fa-registered"></i>
+												  <p>Course Registration <i class="fas fa-angle-left right"></i></p>
+												</a>
+												<ul class="nav nav-treeview">
+																												<li class="nav-item">
+																<a href="https://samvidha.iare.ac.in/home?action=Course_Reg" class="nav-link" title="Regular Course Registration">
+																  <i class="nav-icon fas fa-registered"></i>
+																  <p> Regular Courses </p>
+																</a>
+															</li>
+																												<li class="nav-item">
+																<a href="https://samvidha.iare.ac.in/home?action=Acc_Course_Reg" class="nav-link" title="Accelerated Course Registration">
+																  <i class="nav-icon fas fa-registered"></i>
+																  <p> Accelerated Courses </p>
+																</a>
+															</li>
+																												<li class="nav-item">
+																<a href="https://samvidha.iare.ac.in/home?action=honor_course" class="nav-link" title="Honors Program Registration">
+																  <i class="nav-icon fas fa-registered"></i>
+																  <p> Honors </p>
+																</a>
+															</li>
+																												<li class="nav-item">
+																<a href="https://samvidha.iare.ac.in/home?action=minor" class="nav-link" title="Minors Registration">
+																  <i class="nav-icon fas fa-registered"></i>
+																  <p> Minors </p>
+																</a>
+															</li>
+																												<li class="nav-item">
+																<a href="https://samvidha.iare.ac.in/home?action=lite_course_std" class="nav-link" title="AICTE LITE Program Registration">
+																  <i class="nav-icon fas fa-registered"></i>
+																  <p> AICTE LITE Program Registration </p>
+																</a>
+															</li>
+																									</ul>
+											</li>
+																					<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=stud_att_STD" class="nav-link" title="Attendance">
+												  <i class="nav-icon fas  fa-registered"></i>
+												  <p> Attendance </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=Attendance_std" class="nav-link" title="PAT Attendance">
+												  <i class="nav-icon fas fa-handshake"></i>
+												  <p> PAT Attendance </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=std_att_register" class="nav-link" title="Attendance Register">
+												  <i class="nav-icon fas fa-hand-point-left"></i>
+												  <p> Attendance Register </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=proj_title_allotment" class="nav-link" title="Project Selection & Allotment">
+												  <i class="nav-icon fas fa-check-circle"></i>
+												  <p> Project Selection & Allotment </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=aat_qst_select_std" class="nav-link" title="AAT Question Selection">
+												  <i class="nav-icon fas fa-plus"></i>
+												  <p> AAT Question Selection </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=tm_allotment" class="nav-link" title="Project Team Member Selection">
+												  <i class="nav-icon fas fa-check-circle"></i>
+												  <p> Project Team Member Selection </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=prj_thesis_report_STD" class="nav-link" title="Project Work /Thesis Report">
+												  <i class="nav-icon fas fa-check-circle"></i>
+												  <p> Project Work /Thesis Report </p>
+												</a>
+											</li>
+																	</ul>
+							</li>
+														<li class="nav-item has-treeview">
+								<a href="#" class="nav-link" title="Requisitions">
+								  <i class="nav-icon fas fa-graduation-cap"></i>
+								  <p>Requisitions <i class="fas fa-angle-left right"></i></p>
+								</a>
+								<ul class="nav nav-treeview">
+																			<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=req_certificate" class="nav-link" title="Certificate Request">
+												  <i class="nav-icon fas fa-certificate"></i>
+												  <p> Certificate Request </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=req_trans_stud" class="nav-link" title="Transcript / Duplicate / Name Correction Memo">
+												  <i class="nav-icon fas fa-certificate"></i>
+												  <p> Transcript / Duplicate / Name Correction Memo </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=skill_reg_frm" class="nav-link" title="Skill Program">
+												  <i class="nav-icon fas fa-check-circle"></i>
+												  <p> Skill Program </p>
+												</a>
+											</li>
+																	</ul>
+							</li>
+														<li class="nav-item has-treeview">
+								<a href="#" class="nav-link" title="Print Forms">
+								  <i class="nav-icon fas fa-print"></i>
+								  <p>Print Forms <i class="fas fa-angle-left right"></i></p>
+								</a>
+								<ul class="nav nav-treeview">
+																			<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=print_no_due" class="nav-link" title="No Dues">
+												  <i class="nav-icon fas fa-print"></i>
+												  <p> No Dues </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=print_tc_due" class="nav-link" title="TC Form">
+												  <i class="nav-icon fas fa-print"></i>
+												  <p> TC Form </p>
+												</a>
+											</li>
+																	</ul>
+							</li>
+														<li class="nav-item">
+								<a href="https://samvidha.iare.ac.in/home?action=acc_register_std" class="nav-link " title="Accession Register">
+								  <i class="nav-icon fas fa-hand-point-left"></i>
+								  <p> Accession Register </p>
+								</a>
+							</li>
+													<li class="nav-item">
+								<a href="https://samvidha.iare.ac.in/home?action=workshop_Registration" class="nav-link " title="2023 MCUT-IARE ONLINE WORKSHOP">
+								  <i class="nav-icon fas fa-registered"></i>
+								  <p> 2023 MCUT- IARE ONLINE WORKSHOP Registration </p>
+								</a>
+							</li>
+													<li class="nav-item has-treeview">
+								<a href="#" class="nav-link" title="Payments">
+								  <i class="nav-icon fas fa-money-bill"></i>
+								  <p>Payments <i class="fas fa-angle-left right"></i></p>
+								</a>
+								<ul class="nav nav-treeview">
+																			<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=fee_payment" class="nav-link" title="Online Fees Payment">
+												  <i class="nav-icon fas fa-money-bill"></i>
+												  <p> Online Fees Payment </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=fee_payment_ccav" class="nav-link" title="Online Fees Payment CCAV">
+												  <i class="nav-icon fas fa-money-bill"></i>
+												  <p> Online Fees Payment CCAV </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=fee_payment_status" class="nav-link" title="Fee Status">
+												  <i class="nav-icon fas fa-money-bill"></i>
+												  <p> Fee Status </p>
+												</a>
+											</li>
+																	</ul>
+							</li>
+														<li class="nav-item">
+								<a href="https://samvidha.iare.ac.in/home?action=BC_STD" class="nav-link " title="Bonafide Certificate">
+								  <i class="nav-icon fas fa-money-bill"></i>
+								  <p> Bonafide Certificate </p>
+								</a>
+							</li>
+													<li class="nav-item">
+								<a href="https://samvidha.iare.ac.in/home?action=TT_std" class="nav-link " title="Timetable">
+								  <i class="nav-icon fas fa-hand-point-left"></i>
+								  <p> Timetable </p>
+								</a>
+							</li>
+													<li class="nav-item">
+								<a href="https://samvidha.iare.ac.in/home?action=mybox" class="nav-link " title="My Box">
+								  <i class="nav-icon fas fa-inbox"></i>
+								  <p> My Box </p>
+								</a>
+							</li>
+													<li class="nav-item">
+								<a href="https://samvidha.iare.ac.in/home?action=bus_registration" class="nav-link " title="">
+								  <i class="nav-icon fas fa-registered"></i>
+								  <p> Bus Registration </p>
+								</a>
+							</li>
+													<li class="nav-item">
+								<a href="https://samvidha.iare.ac.in/home?action=up_photo_std" class="nav-link " title="Upload Birth Certificate">
+								  <i class="nav-icon fas fa-upload"></i>
+								  <p> Upload Birth Certificate </p>
+								</a>
+							</li>
+													<li class="nav-item">
+								<a href="https://samvidha.iare.ac.in/home?action=up_abc_std" class="nav-link " title="Update Academic Bank of credit">
+								  <i class="nav-icon fas fa-edit"></i>
+								  <p> Update Academic Bank of credit </p>
+								</a>
+							</li>
+													<li class="nav-item has-treeview">
+								<a href="#" class="nav-link" title="Uploads">
+								  <i class="nav-icon fas fa-upload"></i>
+								  <p>Uploads <i class="fas fa-angle-left right"></i></p>
+								</a>
+								<ul class="nav nav-treeview">
+																			<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=up_fp_std" class="nav-link" title="Upload Field Project">
+												  <i class="nav-icon fas fa-money-bill"></i>
+												  <p> Upload Field Project </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=upload_cvn_std" class="nav-link" title="Upload CVC Certificate">
+												  <i class="nav-icon fas fa-certificate"></i>
+												  <p> Upload CVC Certificate </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=aat_upload" class="nav-link" title="AAT (Tech Talk / Seminar Talk)">
+												  <i class="nav-icon fas fa-upload"></i>
+												  <p> AAT (Tech Talk) </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=project_upload" class="nav-link" title="Upload Project Work">
+												  <i class="nav-icon fas fa-upload"></i>
+												  <p> Upload Project Work </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=upload_aat_2" class="nav-link" title="AAT-II">
+												  <i class="nav-icon fas fa-upload"></i>
+												  <p> AAT-II </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=labrecord_std" class="nav-link" title="Lab Record">
+												  <i class="nav-icon fas fa-upload"></i>
+												  <p> Lab Record </p>
+												</a>
+											</li>
+																	</ul>
+							</li>
+														<li class="nav-item has-treeview">
+								<a href="#" class="nav-link" title="Feedback">
+								  <i class="nav-icon fas fa-comment"></i>
+								  <p>Feedback <i class="fas fa-angle-left right"></i></p>
+								</a>
+								<ul class="nav nav-treeview">
+																			<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=esf" class="nav-link" title="Early Semester Feedback">
+												  <i class="nav-icon fas "></i>
+												  <p> Early Semester Feedback </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=obe_fb_std" class="nav-link" title="OBE Feedback">
+												  <i class="nav-icon fas "></i>
+												  <p> OBE Feedback </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=std_review_syllabus" class="nav-link" title="Design and Review of Syllabus">
+												  <i class="nav-icon fas "></i>
+												  <p> Design and Review of Syllabus </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=ss_std" class="nav-link" title="Satisfaction Survey">
+												  <i class="nav-icon fas "></i>
+												  <p> Satisfaction Survey </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=placement_std" class="nav-link" title="Placement Experience">
+												  <i class="nav-icon fas "></i>
+												  <p> Placement Experience </p>
+												</a>
+											</li>
+																				<li class="nav-item">
+												<a href="https://samvidha.iare.ac.in/home?action=ns" class="nav-link" title="NAAC SURVEY">
+												  <i class="nav-icon fas "></i>
+												  <p> NAAC SURVEY </p>
+												</a>
+											</li>
+																	</ul>
+							</li>
+														<li class="nav-item">
+								<a href="https://samvidha.iare.ac.in/home?action=std_bio" class="nav-link " title="Biometric ">
+								  <i class="nav-icon fas fa-fingerprint"></i>
+								  <p> Biometric </p>
+								</a>
+							</li>
+									</ul>
+		</nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+<style>
+#myInput {
+  background-image: url('/images/searchicon.png');
+  background-position:10px 3px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding:3px 20px 3px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+</style>
+<script>
+  var parent = $("ul.sidebar-menu li.active").closest("ul").closest("li");
+  if (parent[0] != undefined)
+    $(parent[0]).addClass("active");
+
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $(".nav-sidebar li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+
+</script>						<div class="content-wrapper">
+							<!-- Content Header (Page header) -->
+							<section class="content-header">
+								<div class="container-fluid">
+									<div class="row mb-2">
+										<div class="col-sm-6"><h1>Continuous Internal Assessment (CIA) Marks</h1></div>
+										<div class="col-sm-6">
+											<ol class="breadcrumb float-sm-right">
+											  <li class="breadcrumb-item"><a href="#">Home</a></li>
+											  <li class="breadcrumb-item active">Continuous Internal Assessment (CIA) Marks</li>
+											</ol>
+										</div>
+									</div>
+								</div><!-- /.container-fluid -->
+							</section>
+							<!-- Main content -->
+							<section class="content">
+								<div class="card card-teal">
+	<!--<div class="card-header">
+		<h3 class="card-title col-sm-9">Continuous Internal Assessment (CIA)</h3>
+	</div>-->
+	<div class="card-body dataTables_wrapper col-sm-10 mgauto" >
+		<table class="table table-sm table-bordered" align="center" >
+			<tr>
+				<td width="200px">Name </td>
+				<td colspan="3">VASAM YUVARAJ</td>
+			</tr>
+			<tr>
+				<td>Roll Number</td>
+				<td>22951A66J6</td> 
+				<td>Regulation</td>
+				<td>UG20</td> 
+			</tr>
+			<tr>
+				<td>Branch </td>
+				<td colspan="3">Computer Science and Engineering (AI&ML)</td>
+			</tr>
+		</table>
+							<table class="table table-bordered table-sm table-striped" align="center" >
+						<tr class="text-left">
+							<th colspan='3'>Semester - 4</th>
+							<th colspan='16'>Continuous Internal Assessment Marks (Theory) </th>
+						</tr>
+													<tr class="text-left bg-primary" style='font-size:11px'>
+								<th colspan='19'>Academic Year - 2023-24</th>
+							</tr>
+							<tr class="text-center bg-warning" >
+								<th style='color:#044990;'>S.No</th>
+								<th style='color:#044990;'>Course Code</th>
+								<th style='color:#044990;' colspan="12">Course Name</th>
+								<th width='61' style='color:#044990;'>CIE-I (10M)</th>
+								<th width='61' style='color:#044990;'>AAT-I (5M)</th>
+								<th width='61' style='color:#044990;'>CIE-II (10M)</th>
+								<th width='61' style='color:#044990;'>AAT-II (5M)</th>
+								<th width='100' style='color:#044990;'>Total Marks<br>(30M)</th>
+							</tr>
+														<tr>
+									<td>1</td>
+									<td>AITC04</td>
+									<td colspan="12">Theory of Computation</td>
+									<td class='text-center'>4.0</td>
+									<td class='text-center'>-</td>
+									<td class='text-center'>0.0</td>
+									<td class='text-center'>-</td>
+									
+									<td class='text-center'>4</td>
+									
+								</tr>
+																<tr>
+									<td>2</td>
+									<td>ACSC13</td>
+									<td colspan="12">Design and Analysis of Algorithms</td>
+									<td class='text-center'>9.0</td>
+									<td class='text-center'>-</td>
+									<td class='text-center'>0.0</td>
+									<td class='text-center'>-</td>
+									
+									<td class='text-center'>9</td>
+									
+								</tr>
+																<tr>
+									<td>3</td>
+									<td>AITC05</td>
+									<td colspan="12">Database Management Systems</td>
+									<td class='text-center'>8.0</td>
+									<td class='text-center'>-</td>
+									<td class='text-center'>0.0</td>
+									<td class='text-center'>-</td>
+									
+									<td class='text-center'>8</td>
+									
+								</tr>
+																<tr>
+									<td>4</td>
+									<td>AITC09</td>
+									<td colspan="12">Web Application Development</td>
+									<td class='text-center'>7.0</td>
+									<td class='text-center'>-</td>
+									<td class='text-center'>0.0</td>
+									<td class='text-center'>-</td>
+									
+									<td class='text-center'>7</td>
+									
+								</tr>
+																<tr>
+									<td>5</td>
+									<td>ACAC03</td>
+									<td colspan="12">Foundations of Machine Learning</td>
+									<td class='text-center'>10.0</td>
+									<td class='text-center'>-</td>
+									<td class='text-center'>0.0</td>
+									<td class='text-center'>-</td>
+									
+									<td class='text-center'>10</td>
+									
+								</tr>
+																<tr>
+									<td>6</td>
+									<td>AHSC15</td>
+									<td colspan="12">Soft Skills and Interpersonal Communication</td>
+									<td class='text-center'>7.0</td>
+									<td class='text-center'>-</td>
+									<td class='text-center'>0.0</td>
+									<td class='text-center'>-</td>
+									
+									<td class='text-center'>7</td>
+									
+								</tr>
+																<tr>
+									<td>7</td>
+									<td>AHSC14</td>
+									<td colspan="12">Indian Constitution</td>
+									<td class='text-center'>9.0</td>
+									<td class='text-center'>-</td>
+									<td class='text-center'>0.0</td>
+									<td class='text-center'>-</td>
+									
+									<td class='text-center'>14</td>
+									
+								</tr>
+															
+							<tr class='text-center bg-primary'><td colspan="19" style='font-size:11px'><b> Laboratory Marks (Practical) </td></td></tr>
+							<tr class='text-center bg-warning' >
+								<th rowspan="2">S.No</th>
+								<th rowspan="2">Course Code</th>
+								<th rowspan="2">Course Name</th>
+								<th colspan="14">Day to Day Marks<br/>(20/0 M)</th>
+								<th rowspan="2">Exam Marks <br>(10/30 M)</th>
+								<th rowspan="2">Marks <br>(30M)</th>
+							</tr>
+							<tr class='text-center bg-warning' style='font-size:11px'>
+								<th>Week 1</th>
+								<th>Week 2</th>
+								<th>Week 3</th>
+								<th>Week 4</th>
+								<th>Week 5</th>
+								<th>Week 6</th>
+								<th>Week 7</th>
+								<th>Week 8</th>
+								<th>Week 9</th>
+								<th>Week 10</th>
+								<th>Week 11</th>
+								<th>Week 12</th>
+								<th>Week 13</th>
+								<th>Week 14</th>
+							</tr>
+															<tr>
+									<td>8</td>
+									<td>ACSC14</td>
+									<td>Experiential Engineering Education (exeed) - Fabrication / Model Development</td>
+									<!--<td colspan="14"></td>-->
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td align="center" colspan="5" >-</td>
+								</tr>
+														<tr>
+									<td>9</td>
+									<td>AITC07</td>
+									<td>Database Management Systems Laboratory</td>
+									<!--<td colspan="14"></td>-->
+									<td>18</td>
+									<td>18</td>
+									<td>15</td>
+									<td>17</td>
+									<td>19</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td align="center" colspan="5" >-</td>
+								</tr>
+														<tr>
+									<td>10</td>
+									<td>AITC10</td>
+									<td>Web Application Development Laboratory</td>
+									<!--<td colspan="14"></td>-->
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td align="center" colspan="5" >-</td>
+								</tr>
+														<tr>
+									<td>11</td>
+									<td>ACAC04</td>
+									<td>Foundations Of Machine Learning Laboratory</td>
+									<!--<td colspan="14"></td>-->
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td align="center" colspan="5" >-</td>
+								</tr>
+											</table>
+								<table class="table table-bordered table-sm table-striped" align="center" >
+						<tr class="text-left">
+							<th colspan='3'>Semester - 3</th>
+							<th colspan='16'>Continuous Internal Assessment Marks (Theory) </th>
+						</tr>
+													<tr class="text-left bg-primary" style='font-size:11px'>
+								<th colspan='19'>Academic Year - 2023-24</th>
+							</tr>
+							<tr class="text-center bg-warning" >
+								<th style='color:#044990;'>S.No</th>
+								<th style='color:#044990;'>Course Code</th>
+								<th style='color:#044990;' colspan="12">Course Name</th>
+								<th width='61' style='color:#044990;'>CIE-I (10M)</th>
+								<th width='61' style='color:#044990;'>AAT-I (5M)</th>
+								<th width='61' style='color:#044990;'>CIE-II (10M)</th>
+								<th width='61' style='color:#044990;'>AAT-II (5M)</th>
+								<th width='100' style='color:#044990;'>Total Marks<br>(30M)</th>
+							</tr>
+														<tr>
+									<td>1</td>
+									<td>ACSC07</td>
+									<td colspan="12">Computer Organization and Architecture</td>
+									<td class='text-center'>8.0</td>
+									<td class='text-center'>4</td>
+									<td class='text-center'>8.0</td>
+									<td class='text-center'>4</td>
+									
+									<td class='text-center'>24</td>
+									
+								</tr>
+																<tr>
+									<td>2</td>
+									<td>ACSC08</td>
+									<td colspan="12">Data Structures</td>
+									<td class='text-center'>8.0</td>
+									<td class='text-center'>5</td>
+									<td class='text-center'>9.0</td>
+									<td class='text-center'>5</td>
+									
+									<td class='text-center'>27</td>
+									
+								</tr>
+																<tr>
+									<td>3</td>
+									<td>ACSC12</td>
+									<td colspan="12">Operating Systems</td>
+									<td class='text-center'>9.0</td>
+									<td class='text-center'>5</td>
+									<td class='text-center'>9.0</td>
+									<td class='text-center'>5</td>
+									
+									<td class='text-center'>28</td>
+									
+								</tr>
+																<tr>
+									<td>4</td>
+									<td>ACAC01</td>
+									<td colspan="12">Probabilistic Modeling and Reasoning</td>
+									<td class='text-center'>7.0</td>
+									<td class='text-center'>5</td>
+									<td class='text-center'>10.0</td>
+									<td class='text-center'>5</td>
+									
+									<td class='text-center'>27</td>
+									
+								</tr>
+																<tr>
+									<td>5</td>
+									<td>AECC08</td>
+									<td colspan="12">Analog and Digital Electronics</td>
+									<td class='text-center'>10.0</td>
+									<td class='text-center'>5</td>
+									<td class='text-center'>7.0</td>
+									<td class='text-center'>4</td>
+									
+									<td class='text-center'>26</td>
+									
+								</tr>
+																<tr>
+									<td>6</td>
+									<td>AHSC10</td>
+									<td colspan="12">Essence of Indian Traditional Knowledge</td>
+									<td class='text-center'>6.0</td>
+									<td class='text-center'>-</td>
+									<td class='text-center'>10.0</td>
+									<td class='text-center'>-</td>
+									
+									<td class='text-center'>24</td>
+									
+								</tr>
+															
+							<tr class='text-center bg-primary'><td colspan="19" style='font-size:11px'><b> Laboratory Marks (Practical) </td></td></tr>
+							<tr class='text-center bg-warning' >
+								<th rowspan="2">S.No</th>
+								<th rowspan="2">Course Code</th>
+								<th rowspan="2">Course Name</th>
+								<th colspan="14">Day to Day Marks<br/>(20/0 M)</th>
+								<th rowspan="2">Exam Marks <br>(10/30 M)</th>
+								<th rowspan="2">Marks <br>(30M)</th>
+							</tr>
+							<tr class='text-center bg-warning' style='font-size:11px'>
+								<th>Week 1</th>
+								<th>Week 2</th>
+								<th>Week 3</th>
+								<th>Week 4</th>
+								<th>Week 5</th>
+								<th>Week 6</th>
+								<th>Week 7</th>
+								<th>Week 8</th>
+								<th>Week 9</th>
+								<th>Week 10</th>
+								<th>Week 11</th>
+								<th>Week 12</th>
+								<th>Week 13</th>
+								<th>Week 14</th>
+							</tr>
+															<tr>
+									<td>7</td>
+									<td>ACSC09</td>
+									<td>Experiential Engineering Education (exeed) - Prototype / Design Building</td>
+									<!--<td colspan="14">0</td>-->
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>23</td>
+									<td align="center" colspan="5" >23</td>
+								</tr>
+														<tr>
+									<td>8</td>
+									<td>ACSC10</td>
+									<td>Data Structures Laboratory</td>
+									<!--<td colspan="14">20</td>-->
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td></td>
+									<td></td>
+									<td>8</td>
+									<td align="center" colspan="5" >28</td>
+								</tr>
+														<tr>
+									<td>9</td>
+									<td>AITC03</td>
+									<td>Programming With Objects Laboratory</td>
+									<!--<td colspan="14">20</td>-->
+									<td>19</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td></td>
+									<td></td>
+									<td>9</td>
+									<td align="center" colspan="5" >29</td>
+								</tr>
+														<tr>
+									<td>10</td>
+									<td>ACSC11</td>
+									<td>Advanced Python Programming Laboratory</td>
+									<!--<td colspan="14">20</td>-->
+									<td>19</td>
+									<td>19</td>
+									<td>19</td>
+									<td>19</td>
+									<td>19</td>
+									<td>20</td>
+									<td>19</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td></td>
+									<td></td>
+									<td>9</td>
+									<td align="center" colspan="5" >29</td>
+								</tr>
+											</table>
+								<table class="table table-bordered table-sm table-striped" align="center" >
+						<tr class="text-left">
+							<th colspan='3'>Semester - 2</th>
+							<th colspan='16'>Continuous Internal Assessment Marks (Theory) </th>
+						</tr>
+													<tr class="text-left bg-primary" style='font-size:11px'>
+								<th colspan='19'>Academic Year - 2022-23</th>
+							</tr>
+							<tr class="text-center bg-warning" >
+								<th style='color:#044990;'>S.No</th>
+								<th style='color:#044990;'>Course Code</th>
+								<th style='color:#044990;' colspan="12">Course Name</th>
+								<th width='61' style='color:#044990;'>CIE-I (10M)</th>
+								<th width='61' style='color:#044990;'>AAT-I (5M)</th>
+								<th width='61' style='color:#044990;'>CIE-II (10M)</th>
+								<th width='61' style='color:#044990;'>AAT-II (5M)</th>
+								<th width='100' style='color:#044990;'>Total Marks<br>(30M)</th>
+							</tr>
+														<tr>
+									<td>1</td>
+									<td>AHSC01</td>
+									<td colspan="12">English</td>
+									<td class='text-center'>9.0</td>
+									<td class='text-center'>4</td>
+									<td class='text-center'>9.0</td>
+									<td class='text-center'>5</td>
+									
+									<td class='text-center'>27</td>
+									
+								</tr>
+																<tr>
+									<td>2</td>
+									<td>AHSC08</td>
+									<td colspan="12">Probability and Statistics</td>
+									<td class='text-center'>9.0</td>
+									<td class='text-center'>5</td>
+									<td class='text-center'>9.0</td>
+									<td class='text-center'>4</td>
+									
+									<td class='text-center'>27</td>
+									
+								</tr>
+																<tr>
+									<td>3</td>
+									<td>AHSC09</td>
+									<td colspan="12">Applied Physics</td>
+									<td class='text-center'>10.0</td>
+									<td class='text-center'>4</td>
+									<td class='text-center'>10.0</td>
+									<td class='text-center'>2</td>
+									
+									<td class='text-center'>26</td>
+									
+								</tr>
+																<tr>
+									<td>4</td>
+									<td>ACSC04</td>
+									<td colspan="12">Programming for Problem Solving using C</td>
+									<td class='text-center'>8.0</td>
+									<td class='text-center'>5</td>
+									<td class='text-center'>6.0</td>
+									<td class='text-center'>5</td>
+									
+									<td class='text-center'>24</td>
+									
+								</tr>
+															
+							<tr class='text-center bg-primary'><td colspan="19" style='font-size:11px'><b> Laboratory Marks (Practical) </td></td></tr>
+							<tr class='text-center bg-warning' >
+								<th rowspan="2">S.No</th>
+								<th rowspan="2">Course Code</th>
+								<th rowspan="2">Course Name</th>
+								<th colspan="14">Day to Day Marks<br/>(20/0 M)</th>
+								<th rowspan="2">Exam Marks <br>(10/30 M)</th>
+								<th rowspan="2">Marks <br>(30M)</th>
+							</tr>
+							<tr class='text-center bg-warning' style='font-size:11px'>
+								<th>Week 1</th>
+								<th>Week 2</th>
+								<th>Week 3</th>
+								<th>Week 4</th>
+								<th>Week 5</th>
+								<th>Week 6</th>
+								<th>Week 7</th>
+								<th>Week 8</th>
+								<th>Week 9</th>
+								<th>Week 10</th>
+								<th>Week 11</th>
+								<th>Week 12</th>
+								<th>Week 13</th>
+								<th>Week 14</th>
+							</tr>
+															<tr>
+									<td>5</td>
+									<td>AHSC04</td>
+									<td>English Language And Communication Skills Laboratory</td>
+									<!--<td colspan="14">20</td>-->
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td></td>
+									<td></td>
+									<td>7</td>
+									<td align="center" colspan="5" >27</td>
+								</tr>
+														<tr>
+									<td>6</td>
+									<td>AHSC05</td>
+									<td>Physics Laboratory</td>
+									<!--<td colspan="14">20</td>-->
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td></td>
+									<td></td>
+									<td>8</td>
+									<td align="center" colspan="5" >28</td>
+								</tr>
+														<tr>
+									<td>7</td>
+									<td>ACSC05</td>
+									<td>Programming For Problem Solving Using C Laboratory</td>
+									<!--<td colspan="14">20</td>-->
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>19</td>
+									<td>20</td>
+									<td>19</td>
+									<td>19</td>
+									<td>19</td>
+									<td></td>
+									<td></td>
+									<td>10</td>
+									<td align="center" colspan="5" >30</td>
+								</tr>
+											</table>
+								<table class="table table-bordered table-sm table-striped" align="center" >
+						<tr class="text-left">
+							<th colspan='3'>Semester - 1</th>
+							<th colspan='16'>Continuous Internal Assessment Marks (Theory) </th>
+						</tr>
+													<tr class="text-left bg-primary" style='font-size:11px'>
+								<th colspan='19'>Academic Year - 2022-23</th>
+							</tr>
+							<tr class="text-center bg-warning" >
+								<th style='color:#044990;'>S.No</th>
+								<th style='color:#044990;'>Course Code</th>
+								<th style='color:#044990;' colspan="12">Course Name</th>
+								<th width='61' style='color:#044990;'>CIE-I (10M)</th>
+								<th width='61' style='color:#044990;'>AAT-I (5M)</th>
+								<th width='61' style='color:#044990;'>CIE-II (10M)</th>
+								<th width='61' style='color:#044990;'>AAT-II (5M)</th>
+								<th width='100' style='color:#044990;'>Total Marks<br>(30M)</th>
+							</tr>
+														<tr>
+									<td>1</td>
+									<td>AHSC02</td>
+									<td colspan="12">Linear Algebra and Calculus </td>
+									<td class='text-center'>9.0</td>
+									<td class='text-center'>5</td>
+									<td class='text-center'>9.0</td>
+									<td class='text-center'>5</td>
+									
+									<td class='text-center'>28</td>
+									
+								</tr>
+																<tr>
+									<td>2</td>
+									<td>AHSC06</td>
+									<td colspan="12">Chemistry</td>
+									<td class='text-center'>9.0</td>
+									<td class='text-center'>5</td>
+									<td class='text-center'>10.0</td>
+									<td class='text-center'>5</td>
+									
+									<td class='text-center'>29</td>
+									
+								</tr>
+																<tr>
+									<td>3</td>
+									<td>AEEC01</td>
+									<td colspan="12">Basic Electrical Engineering</td>
+									<td class='text-center'>7.0</td>
+									<td class='text-center'>5</td>
+									<td class='text-center'>6.0</td>
+									<td class='text-center'>5</td>
+									
+									<td class='text-center'>23</td>
+									
+								</tr>
+																<tr>
+									<td>4</td>
+									<td>ACSC01</td>
+									<td colspan="12">Python Programming</td>
+									<td class='text-center'>9.0</td>
+									<td class='text-center'>5</td>
+									<td class='text-center'>7.0</td>
+									<td class='text-center'>5</td>
+									
+									<td class='text-center'>26</td>
+									
+								</tr>
+															
+							<tr class='text-center bg-primary'><td colspan="19" style='font-size:11px'><b> Laboratory Marks (Practical) </td></td></tr>
+							<tr class='text-center bg-warning' >
+								<th rowspan="2">S.No</th>
+								<th rowspan="2">Course Code</th>
+								<th rowspan="2">Course Name</th>
+								<th colspan="14">Day to Day Marks<br/>(20/0 M)</th>
+								<th rowspan="2">Exam Marks <br>(10/30 M)</th>
+								<th rowspan="2">Marks <br>(30M)</th>
+							</tr>
+							<tr class='text-center bg-warning' style='font-size:11px'>
+								<th>Week 1</th>
+								<th>Week 2</th>
+								<th>Week 3</th>
+								<th>Week 4</th>
+								<th>Week 5</th>
+								<th>Week 6</th>
+								<th>Week 7</th>
+								<th>Week 8</th>
+								<th>Week 9</th>
+								<th>Week 10</th>
+								<th>Week 11</th>
+								<th>Week 12</th>
+								<th>Week 13</th>
+								<th>Week 14</th>
+							</tr>
+															<tr>
+									<td>5</td>
+									<td>ACSC06</td>
+									<td>Experiential Engineering Education (exeed)- Academic Success</td>
+									<!--<td colspan="14">0</td>-->
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>25</td>
+									<td align="center" colspan="5" >25</td>
+								</tr>
+														<tr>
+									<td>6</td>
+									<td>AEEC04</td>
+									<td>Basic Electrical Engineering Laboratory</td>
+									<!--<td colspan="14">20</td>-->
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>19</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>5</td>
+									<td align="center" colspan="5" >25</td>
+								</tr>
+														<tr>
+									<td>7</td>
+									<td>ACSC02</td>
+									<td>Python Programming Laboratory</td>
+									<!--<td colspan="14">20</td>-->
+									<td>19</td>
+									<td>18</td>
+									<td>17</td>
+									<td>17</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td></td>
+									<td></td>
+									<td>9</td>
+									<td align="center" colspan="5" >29</td>
+								</tr>
+														<tr>
+									<td>8</td>
+									<td>AMEC04</td>
+									<td>Engineering Workshop Practice</td>
+									<!--<td colspan="14">20</td>-->
+									<td>20</td>
+									<td>20</td>
+									<td>20</td>
+									<td>19</td>
+									<td>19</td>
+									<td>19</td>
+									<td>20</td>
+									<td>20</td>
+									<td>19</td>
+									<td>19</td>
+									<td>19</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>6</td>
+									<td align="center" colspan="5" >26</td>
+								</tr>
+											</table>
+				</div>
+</div>
+<div class="card card-danger card-outline">
+	<div class="card-header">
+		<h3 class="card-title"><i class="fas fa-exclamation-triangle"></i> Note</h3>
+	</div>
+	<div class="card-body">
+		<p class="text-danger">- : Yet to be corrected and uploaded</p>
+		<p class="text-danger">() : Marks in the bracket indicates Re-exam</p>
+		<p class="text-danger">- : Available after completion on CIE-I and CIE-II</p>
+	</div>
+</div>
+ 							</section class="content">
+						</div>
+						</div>
+<footer class="main-footer">
+  <strong>Copyright &copy; 2024  Institute of Aeronautical Engineering.</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All rights reserved.
+</footer>
+	
+	
+
+
+<!-- ChartJS -->
+<script src="https://samvidha.iare.ac.in/plugins/chart.js/Chart.min.js"></script>
+
+<!-- Sparkline -->
+<script src="https://samvidha.iare.ac.in/plugins/sparklines/sparkline.js"></script>
+
+<!-- jQuery Knob Chart -->
+<script src="https://samvidha.iare.ac.in/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="https://samvidha.iare.ac.in/plugins/moment/moment.min.js"></script>
+<script src="https://samvidha.iare.ac.in/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Bootstrap Switch -->
+<script src="https://samvidha.iare.ac.in/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="https://samvidha.iare.ac.in/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="https://samvidha.iare.ac.in/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="https://samvidha.iare.ac.in/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="https://samvidha.iare.ac.in/dist/js/adminlte.js"></script>
+
+<!-- AdminLTE for demo purposes -->
+<script src="https://samvidha.iare.ac.in/dist/js/demo.js"></script>
+	<script>
+	$(document).ready(function(){  
+		function check_session(){
+			$.ajax({
+				url:"pages/layout/check_session.php",
+				method:"POST",
+				success:function(data)
+				{
+					if(data == '1')
+					{
+						//alert('Your session has been expired!');  
+						window.location.href="index";
+					}
+				}
+			})
+		}
+		setInterval(function(){
+			check_session();
+		}, 60000);  //60000 means 60 seconds
+	});  
+	$("html").on("contextmenu",function(e){
+		return false;
+    });
+	$('#fram_doc').bind('contextmenu',function(e){ 
+		return false; 
+	});
+	
+	$(document).bind("menubar",function(e) {
+		//e.preventDefault();
+	});
+	
+	$(document).keydown(function(e){
+		
+		if(e.ctrlKey && e.keyCode == 83){
+			e.preventDefault(); 
+			return false;
+		}
+		if(e.which === 123 || e.which === 17 || e.which === 18 || e.which === 16){
+		   e.preventDefault(); 
+		   return false;
+		}
+		if ((e.ctrlKey && e.shiftKey && e.keyCode == 73) || (e.ctrlKey && e.keyCode==73) || (e.ctrlKey && e.shiftKey && e.keyCode == 74)  || (e.altKey && e.keyCode == 70)) {
+			 e.preventDefault(); 
+			return false;
+		}
+		//alert(e.keyCode);
+	
+	});
+	
+	
+  $.widget.bridge('uibutton', $.ui.button)
+</script></body>
+</html>
